@@ -1,0 +1,73 @@
+.roll-dice {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+
+}
+
+.rolldice-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.roll-dice button {
+    align-self: center;
+    width: 15em;
+    padding: 1em;
+    font-size: 1em;
+    border: 0px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(255,0,0,1);
+    margin-top: 0em;
+    
+}
+
+.roll-dice button:hover {
+    background-color: rgba(255, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+/* Smaller than Mobile Phones */
+@media screen and (min-width: 320px) {
+    .roll-dice button {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 4em;
+    }
+}
+
+/* Mobile Phones */
+@media screen and (max-width: 480px){
+    .roll-dice button {
+        font-size: 3em;
+    }
+
+    h2{
+        font-size: 5em;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .roll-dice button {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}
+
+/* Tablets, Laptops, Desktops */
+@media screen and (min-width: 801px){
+    .roll-dice button {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}
